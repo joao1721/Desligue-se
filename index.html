@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Desligue-se — Área do Médico Prescritor</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="/Assets/css/style.css">
+	</head>
+	<body>
+
+		<!-- ===== HEADER NAVEGÁVEL — SIGNAL DOCK ===== -->
+		<header class="site-header" id="site-header">
+			<div class="header-shell">
+				<a href="#topo" class="header-brand" aria-label="Desligue-se — início">
+					<span class="brand-power" aria-hidden="true">
+						<svg viewBox="0 0 24 24"><path d="M13 3h-2v10h2V3zm4.83 2.17-1.42 1.42C17.99 7.86 19 9.81 19 12c0 3.87-3.13 7-7 7s-7-3.13-7-7c0-2.19 1.01-4.14 2.58-5.42L6.17 5.17C4.23 6.82 3 9.26 3 12c0 4.97 4.03 9 9 9s9-4.03 9-9c0-2.74-1.23-5.18-3.17-6.83z"/></svg>
+					</span>
+					<span class="brand-copy">
+						<strong>Desligue-se</strong>
+						<span>Área do prescritor</span>
+					</span>
+				</a>
+
+				<nav class="header-nav" id="header-nav" aria-label="Navegação principal">
+					<span class="nav-signal" id="nav-signal" aria-hidden="true"></span>
+					<a href="#topo" data-nav>Início</a>
+					<a href="#ferramentas" data-nav>Ferramentas</a>
+					<a href="#trilha" data-nav>Trilha</a>
+					<a href="#suporte" data-nav>Suporte</a>
+				</nav>
+
+				<div class="header-actions">
+					<span class="mode-chip" id="mode-chip" aria-live="polite">ON</span>
+					<a href="#" class="header-cta" id="header-cta">Entrar</a>
+					<button type="button" class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-panel">
+						<span></span><span></span><span></span>
+					</button>
+				</div>
+			</div>
+
+			<div class="mobile-panel" id="mobile-panel">
+				<nav aria-label="Menu mobile">
+					<a href="#topo" data-nav>Início<span>01</span></a>
+					<a href="#ferramentas" data-nav>Ferramentas<span>02</span></a>
+					<a href="#trilha" data-nav>Trilha<span>03</span></a>
+					<a href="#suporte" data-nav>Suporte<span>04</span></a>
+				</nav>
+				<div class="mobile-panel-foot">
+					<p>Ciência, adesão e conduta clínica em um só fluxo.</p>
+					<span class="mode-chip" id="mode-chip-mobile">ON</span>
+				</div>
+			</div>
+		</header>
+
+		<!-- ===== SECTION 1: HERO INTERATIVA ===== -->
+		<section class="hero" id="topo">
+			<div class="container hero-grid">
+				<div>
+					<span class="section-label">Área exclusiva do médico prescritor</span>
+					<h1 id="hero-title">Convide seu paciente a se <span>desligar.</span></h1>
+					<p id="hero-subtitle">Aqui você encontra ciência validada por especialistas, ferramentas que cabem na consulta e o caminho para o seu paciente tratar de verdade. Entre para acessar o seu espaço.</p>
+					<div class="hero-actions">
+						<a href="#" class="btn btn-primary" id="btn-portal">Entrar</a>
+						<a href="#" class="btn btn-secondary">Primeiro acesso? Cadastre-se</a>
+					</div>
+				</div>
+
+				<div class="hero-visual">
+					<div class="orbe-glow-bg"></div>
+					<div class="switch-panel" id="main-switch">
+						<span class="switch-label on">ON</span>
+						<div class="switch-trigger" id="switch-btn">ON</div>
+						<span class="switch-label off">OFF</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ===== SECTION 2: SHOWCASE EDITORIAL DEDICADO ===== -->
+		<section class="product-showcase" id="ferramentas">
+			<div class="container">
+				<div class="showcase-intro">
+					<span class="section-label">Ecossistema Clínico</span>
+					<h2>Para apoiar e facilitar o seu momento com o paciente.</h2>
+				</div>
+
+				<div class="showcase-list">
+					<!-- DURMA BEM -->
+					<div class="product-row row-durmabem">
+						<div class="product-text">
+							<span class="tool-tag">Adesão Terapêutica</span>
+							<h3>Programa Durma Bem</h3>
+							<p>tenha a oportunidade de proporcionar a
+								experimentação do tratamento indicado para o seu paciente. Emita cupons de desconto de forma 100% automatizada e ágil</p>
+							<a href="/durma-bem" class="product-action-link">
+								Gerar benefício ao paciente
+								<svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+							</a>
+						</div>
+						<div class="product-media">
+							<div class="media-glow"></div>
+							<div class="phone-wrapper">
+								<div class="phone-screen">
+									<div class="phone-voucher">
+										<span style="font-size: 0.65rem; color: var(--neon-cyan); font-weight: 700; text-transform: uppercase;">Benefício Ativo</span>
+										<h5 style="color: #fff; font-size: 1rem; margin-top: 0.5rem;">Programa Durma Bem</h5>
+										<div class="phone-code">EMS-VOUCHER</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- ROTEIRO DE ANAMNESE -->
+					<div class="product-row reverse">
+						<div class="product-text">
+							<span class="tool-tag">Suporte Diagnóstico</span>
+							<h3>Roteiro de anamnese</h3>
+							<p>Conduza investigações clínicas de forma estruturada e padronizada. Um guia ágil com perguntas-chave esenciais para mapear com precisão as queixas e distúrbios de sono do paciente em minutos.</p>
+							<a href="/desligue-se#anamnese" class="product-action-link">
+								Abrir roteiro no consultório
+								<svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+							</a>
+						</div>
+						<div class="product-media">
+							<div class="media-glow"></div>
+							<div class="doc-preview">
+								<div class="doc-header-line"></div>
+								<div class="doc-body-line"></div>
+								<div class="doc-body-line"></div>
+								<div class="doc-body-line" style="width: 80%;"></div>
+							</div>
+						</div>
+					</div>
+
+					<!-- DIÁRIO DO SONO -->
+					<div class="product-row">
+						<div class="product-text">
+							<span class="tool-tag">Monitoramento Clínico</span>
+							<h3>Diário do Sono</h3>
+							<p>Engaje seu paciente ativamente no tratamento fora do consultório. Compartilhe o arquivo digital para registro de rotina e hábitos diários.</p>
+							<a href="/assets/pdf/260202_EMS_Patz_Di%C3%A1riodoSono_DurmaBem_A5_V5_Formulario.pdf" target="_blank" class="product-action-link">
+								Acessar material digital (PDF)
+								<svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+							</a>
+						</div>
+						<div class="product-media">
+							<div class="media-glow"></div>
+							<div class="diary-preview">
+								<div class="diary-cell active">🌙</div><div class="diary-cell active">🌙</div><div class="diary-cell"></div><div class="diary-cell active">🌙</div>
+								<div class="diary-cell"></div><div class="diary-cell active">🌙</div><div class="diary-cell active">🌙</div><div class="diary-cell"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ===== SECTION 3: TRILHA CINEMÁTICA DE CONTEÚDO COMPLETA (5 SPEAKERS) ===== -->
+		<section class="trilha-showcase" id="trilha">
+			<div class="container">
+				<div class="trilha-header">
+					<div>
+						<span class="section-label">Atualização Científica</span>
+						<h2>O que os especialistas em Medicina do Sono estão assistindo</h2>
+					</div>
+					<a href="/todos-os-conteudos" class="btn btn-secondary">Explorar trilha completa</a>
+				</div>
+
+				<div class="pipeline-master">
+					<!-- 1. DR. ARTHUR & DRA. ROSA -->
+					<div class="pipeline-row-final">
+						<div class="speaker-aside-left">
+							<div class="speaker-cutout-frame">
+								<div class="speaker-glow-base"></div>
+								<!-- COLOQUE A FOTO RECORTADA DELES AQUI: -->
+								<img src="/Assets/img/danila_e_rosana.png" alt="Dr. Arthur & Dra. Rosa" class="speaker-png-clean">
+							</div>
+							<span class="speaker-label-name">Dra. Rosa  & Dr. Arthur</span>
+						</div>
+						<div class="pipeline-center-node"><span class="insight-text-tag">🎙️ 45 min</span></div>
+						<div class="pipeline-body-right">
+							<div class="content-details-panel">
+								<div class="content-text-group">
+									<span class="meta-category-tag">Podcast Principal</span>
+									<h3>“Sono: luxo ou necessidade radical?”</h3>
+									<p>Discussão clínica de alto nível analisando os pilares de impacto do sono na saúde integral.</p>
+								</div>
+								<a href="/podcast/sono-um-luxo-ou-uma-necessidade-radical" class="player-thumb-wrapper"><div class="play-action-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></a>
+							</div>
+						</div>
+					</div>
+
+					<!-- 2. DR. RENAN IEGOROFF -->
+					<div class="pipeline-row-final">
+						<div class="speaker-aside-left">
+							<div class="speaker-cutout-frame">
+								<div class="speaker-glow-base"></div>
+								<!-- COLOQUE A FOTO RECORTADA DELE AQUI: -->
+								<img src="/Assets/img/renan.png" alt="Dr. Renan Iegoroff" class="speaker-png-clean">
+							</div>
+							<span class="speaker-label-name">Dr. Renan Iegoroff</span>
+						</div>
+						<div class="pipeline-center-node"><span class="insight-text-tag">📺 18 min</span></div>
+						<div class="pipeline-body-right">
+							<div class="content-details-panel">
+								<div class="content-text-group">
+									<span class="meta-category-tag">Prática Clínica</span>
+									<h3>Distúrbios do Sono: uma abordagem prática sobre a insônia</h3>
+									<p>Condutas objetivas e tomadas de decisão rápidas estruturadas para a rotina de atendimento do consultório.</p>
+								</div>
+								<a href="/video/disturbios-do-sono-uma-abordagem-pratica-sobre-insonia" class="player-thumb-wrapper"><div class="play-action-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></a>
+							</div>
+						</div>
+					</div>
+
+					<!-- 3. DR. CAIO BONADIO -->
+					<div class="pipeline-row-final">
+						<div class="speaker-aside-left">
+							<div class="speaker-cutout-frame">
+								<div class="speaker-glow-base"></div>
+								<!-- COLOQUE A FOTO RECORTADA DELE AQUI: -->
+								<img src="/Assets/img/bonadio.png" alt="Dr. Caio Bonadio" class="speaker-png-clean">
+							</div>
+							<span class="speaker-label-name">Dr. Caio Bonadio</span>
+						</div>
+						<div class="pipeline-center-node"><span class="insight-text-tag">📺 22 min</span></div>
+						<div class="pipeline-body-right">
+							<div class="content-details-panel">
+								<div class="content-text-group">
+									<span class="meta-category-tag">Estratégia Terapêutica</span>
+									<h3>Terapia combinada no tratamento da insônia</h3>
+									<p>O racional científico e os resultados práticos da combinação de intervenções comportamentais e farmacológicas.</p>
+								</div>
+								<a href="/video/terapia-combinada-no-tratamento-da-insonia" class="player-thumb-wrapper"><div class="play-action-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></a>
+							</div>
+						</div>
+					</div>
+
+					<!-- 4. DRA. HELENA HACHUL -->
+					<div class="pipeline-row-final">
+						<div class="speaker-aside-left">
+							<div class="speaker-cutout-frame">
+								<div class="speaker-glow-base"></div>
+								<!-- COLOQUE A FOTO RECORTADA DELA AQUI: -->
+								<img src="/Assets/img/helena.png" alt="Dra. Helena Hachul" class="speaker-png-clean">
+							</div>
+							<span class="speaker-label-name">Dra. Helena Hachul</span>
+						</div>
+						<div class="pipeline-center-node"><span class="insight-text-tag">📺 15 min</span></div>
+						<div class="pipeline-body-right">
+							<div class="content-details-panel">
+								<div class="content-text-group">
+									<span class="meta-category-tag">Fisiologia Específica</span>
+									<h3>O sono na mulher</h3>
+									<p>Particularidades dos ciclos biológicos femininos e diretrizes para o manejo especializado da insônia.</p>
+								</div>
+								<a href="/video/o-sono-na-mulher" class="player-thumb-wrapper"><div class="play-action-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></a>
+							</div>
+						</div>
+					</div>
+
+					<!-- 5. DR. FERNANDO COELHO -->
+					<div class="pipeline-row-final">
+						<div class="speaker-aside-left">
+							<div class="speaker-cutout-frame">
+								<div class="speaker-glow-base"></div>
+								<!-- COLOQUE A FOTO RECORTADA DELE AQUI: -->
+								<img src="/Assets/img/fernando.png" alt="Dr. Fernando Coelho" class="speaker-png-clean">
+							</div>
+							<span class="speaker-label-name">Dr. Fernando Coelho</span>
+						</div>
+						<div class="pipeline-center-node"><span class="insight-text-tag">📺 25 min</span></div>
+						<div class="pipeline-body-right">
+							<div class="content-details-panel">
+								<div class="content-text-group">
+									<span class="meta-category-tag">Manejo de Comorbidades</span>
+									<h3>Insônia e Depressão</h3>
+									<p>Mapeamento das intersecções neurobiológicas e condutas clínicas integradas para tratamento concomitante.</p>
+								</div>
+								<a href="/video/insonia-e-depressao" class="player-thumb-wrapper"><div class="play-action-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ===== SECTION 4: SHOWCASE EDITORIAL PATZ (SEM CARDS / CLEAN) ===== -->
+		<section class="patz-showcase-clean" id="suporte">
+			<div class="container" id="portfolio">
+
+				<!-- Cabeçalho Direto -->
+				<div class="patz-clean-header">
+					<span class="section-label">Acelerador Terapêutico</span>
+					<h2>Linha <span>Patz</span></h2>
+					<p>Ajuste de conduta e precisão no tratamento da insônia.</p>
+				</div>
+
+				<div class="patz-editorial-grid">
+
+					<!-- BLOCO 1: LINHA PATZ SL (SUBLINGUAL) -->
+					<div class="patz-editorial-item item-sl">
+
+						<!-- Esquerda: Visual do Produto + Badge -->
+						<div class="patz-visual-col">
+							<div class="seal-floating-clean">
+								<img src="/Assets/img/badge_1e_unico_sl.png" alt="1º e Único SL">
+							</div>
+							<div class="box-image-clean">
+								<!-- Alterne/escolha a imagem principal da caixa SL -->
+								<img src="/Assets/img/Imagem2.png" alt="Patz SL" class="box-png">
+							</div>
+						</div>
+
+						<!-- Direita: Informações Limpas -->
+						<div class="patz-info-col">
+							<div class="brand-logo-clean">
+								<img src="/Assets/img/Patzslogo.png" alt="Patz SL">
+							</div>
+
+							<!-- Seletor de Dosagens (Laranja 10mg / Azul 5mg) -->
+							<div class="dosage-selector-clean">
+								<span class="dos-btn active-10mg">10mg</span>
+								<span class="dos-btn active-5mg">5mg</span>
+							</div>
+
+							<!-- Textos Féis (Sem claims inventados) -->
+							<ul class="clean-bullets-list">
+								<li>
+									<span class="bullet-glow orange-glow"></span>
+									A marca mais prescrita pelos médicos
+								</li>
+								<li>
+									<span class="bullet-glow steel-glow"></span>
+									Não intercambiável produto referência
+								</li>
+							</ul>
+
+							<div class="bula-actions-group">
+								<a href="/assets/pdf/bula-patz-sl-10mg.pdf" target="_blank" class="btn-bula-clean">
+									Bula SL 10mg &rarr;
+								</a>
+								<a href="/assets/pdf/bula-patz-sl-5mg.pdf" target="_blank" class="btn-bula-clean">
+									Bula SL 5mg &rarr;
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- SEPARADOR VERTICAL SLIM -->
+					<div class="editorial-divider"></div>
+
+					<!-- BLOCO 2: PATZ GOTAS (GTS) -->
+					<div class="patz-editorial-item item-gts">
+
+						<!-- Esquerda: Visual do Produto -->
+						<div class="patz-visual-col">
+							<div class="box-image-clean">
+								<img src="/Assets/img/patz-GTS-10mg-20ml-dir.png" alt="Patz GTS" class="box-png">
+							</div>
+						</div>
+
+						<!-- Direita: Informações Limpas -->
+						<div class="patz-info-col">
+							<div class="brand-logo-clean">
+								<img src="/Assets/img/patzgtslogo.png" alt="Patz GTS">
+							</div>
+
+							<div class="dosage-selector-clean">
+								<span class="dos-btn active-gts">Gotas</span>
+							</div>
+
+							<ul class="clean-bullets-list">
+								<li>
+									<span class="bullet-glow cyan-glow"></span>
+									Inovação único no mundo em gotas
+								</li>
+							</ul>
+
+							<div class="bula-actions-group">
+								<a href="/assets/pdf/bula-patz-gotas.pdf" target="_blank" class="btn-bula-clean highlight-gts">
+									Bula Patz GTS &rarr;
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- DOCUMENTAÇÃO ANEXA SIMPLES -->
+				<!-- PAINEL DESTACADO DE APOIO CIENTÍFICO E DIRETRIZES -->
+<div class="science-hub-panel">
+    <div class="science-hub-header">
+        <span class="science-tag">Diretrizes e Suporte</span>
+        <h3>Documentação de Apoio Científico</h3>
+    </div>
+
+    <div class="science-cards-grid">
+        <!-- CARD 1: CARTILHA -->
+        <a href="/assets/pdf/DIGITAL-cartilha-semana-do-sono-2026.pdf" target="_blank" class="science-card">
+            <div class="science-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+            </div>
+            <div class="science-card-info">
+                <h4>Cartilha do Sono 2026</h4>
+                <p>Guia prático de orientação do sono para a rotina do paciente.</p>
+            </div>
+            <div class="science-card-arrow">&rarr;</div>
+        </a>
+
+        <!-- CARD 2: CONSENSO -->
+        <a href="/assets/pdf/30332-Consenso-Brasileiro-de-Insonia.pdf" target="_blank" class="science-card">
+            <div class="science-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+            </div>
+            <div class="science-card-info">
+                <h4>Consenso de Insônia 2023</h4>
+                <p>Diretrizes nacionais para diagnóstico, conduta clínica e condutas terapêuticas.</p>
+            </div>
+            <div class="science-card-arrow">&rarr;</div>
+        </a>
+
+        <!-- CARD 3: EMS SAÚDE -->
+        <a href="https://www.emssaude.com.br/" target="_blank" class="science-card">
+            <div class="science-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+            </div>
+            <div class="science-card-info">
+                <h4>Portal EMS Saúde</h4>
+                <p>Plataforma institucional com programas de adesão e benefícios para paciente</p>
+            </div>
+            <div class="science-card-arrow">&rarr;</div>
+        </a>
+    </div>
+</div>
+			</div>
+		</section>
+
+		<!-- ===== SEÇÃO DE ENCERRAMENTO ORIGINAL CLONADA INTEGRAIS DE CÓDIGO-FONTE ===== -->
+		<section class="c-bSfZqq">
+			<div class="c-hNfWBN">
+
+				<!-- Logo EMS no topo superior direito -->
+				<div class="c-fJWCSF">
+					<img alt="EMS" loading="lazy" width="85.33" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/Assets/img/logo-negativo.svg">
+				</div>
+
+				<!-- Grid Layout Original -->
+				<div class="c-eGZnNA">
+
+					<!-- LADO ESQUERDO: TEXTOS E O SWITCH DE ENERGIA INTEGRADO -->
+					<div class="c-bMPUAP">
+						<h1 class="c-buPIrl">Desligue-se.</h1>
+
+						<h2 class="c-MBkqP">
+							<span>A Paz começa no</span>
+							<span class="c-heOYNU">
+								<span class="c-hbPBhM">
+									<!-- SVG exato do PowerSettingsNewIcon extraído do seu código fonte -->
+									<svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="PowerSettingsNewIcon" style="width: 1em; height: 1em; display: inline-block; fill: currentColor; font-size: inherit; color: #fff;">
+										<path d="M13 3h-2v10h2V3zm4.83 2.17-1.42 1.42C17.99 7.86 19 9.81 19 12c0 3.87-3.13 7-7 7s-7-3.13-7-7c0-2.19 1.01-4.14 2.58-5.42L6.17 5.17C4.23 6.82 3 9.26 3 12c0 4.97 4.03 9 9 9s9-4.03 9-9c0-2.74-1.23-5.18-3.17-6.83z"></path>
+									</svg>
+								</span>
+								<span>ff.</span>
+							</span>
+						</h2>
+
+						<!-- Bloco de Slogans e Badges originais -->
+						<div class="c-dTBqqQ">
+							<div class="c-eNjwoY">Durma Bem.</div>
+							<span class="c-ggVyIG">Acorde Melhor.</span>
+						</div>
+					</div>
+
+					<!-- LADO DIREITO: VETOR PRINCIPAL DA ILUSTRAÇÃO -->
+					<div class="c-klPfdc">
+						<div class="c-jxZihf">
+							<img alt="Ilustração Desligue-se" width="1536" height="1024" decoding="async" data-nimg="1" style="color:transparent;width:100%;height:auto;display:block" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 640px" src="/Assets/img/desligue-se-header.webp">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script src="/Assets/js/script.js"></script>
+	</body>
+</html>
