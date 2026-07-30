@@ -1,30 +1,30 @@
 
-// const mainSwitch = document.getElementById('main-switch');
-// const switchBtn = document.getElementById('switch-btn');
-// const bodyElement = document.body;
-// const heroTitle = document.getElementById('hero-title');
-// const heroSubtitle = document.getElementById('hero-subtitle');
-// const btnPortal = document.getElementById('btn-portal');
-// const headerEl = document.getElementById('site-header');
-// const headerCta = document.getElementById('header-cta');
-// const modeChip = document.getElementById('mode-chip');
-// const modeChipMobile = document.getElementById('mode-chip-mobile');
-// const navToggle = document.getElementById('nav-toggle');
-// const navSignal = document.getElementById('nav-signal');
-// const headerNav = document.getElementById('header-nav');
-// const navLinks = Array.from(document.querySelectorAll('[data-nav]'));
-// const sections = [
-//     { id: 'topo', el: document.getElementById('topo') },
-//     { id: 'ferramentas', el: document.getElementById('ferramentas') },
-//     { id: 'trilha', el: document.getElementById('trilha') },
-//     { id: 'suporte', el: document.getElementById('suporte') }
-// ].filter(s => s.el);
+const mainSwitch = document.getElementById('main-switch');
+const switchBtn = document.getElementById('switch-btn');
+const bodyElement = document.body;
+const heroTitle = document.getElementById('hero-title');
+const heroSubtitle = document.getElementById('hero-subtitle');
+const btnPortal = document.getElementById('btn-portal');
+const headerEl = document.getElementById('site-header');
+const headerCta = document.getElementById('header-cta');
+const modeChip = document.getElementById('mode-chip');
+const modeChipMobile = document.getElementById('mode-chip-mobile');
+const navToggle = document.getElementById('nav-toggle');
+const navSignal = document.getElementById('nav-signal');
+const headerNav = document.getElementById('header-nav');
+const navLinks = Array.from(document.querySelectorAll('[data-nav]'));
+const sections = [
+    { id: 'topo', el: document.getElementById('topo') },
+    { id: 'ferramentas', el: document.getElementById('ferramentas') },
+    { id: 'trilha', el: document.getElementById('trilha') },
+    { id: 'suporte', el: document.getElementById('suporte') }
+].filter(s => s.el);
 
-// function syncModeChips(isOff) {
-//     const label = isOff ? 'OFF' : 'ON';
-//     if (modeChip) modeChip.textContent = label;
-//     if (modeChipMobile) modeChipMobile.textContent = label;
-// }
+function syncModeChips(isOff) {
+    const label = isOff ? 'OFF' : 'ON';
+    if (modeChip) modeChip.textContent = label;
+    if (modeChipMobile) modeChipMobile.textContent = label;
+}
 
 function updateInterface(isOff) {
     if (isOff) {
