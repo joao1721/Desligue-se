@@ -767,7 +767,7 @@ body:not(.mode-off) .switch-label.on {
 
 /* SECTION 2: SHOWCASE EDITORIAL DEDICADO */
 .product-showcase {
-    padding: 6rem 0 0;
+    padding: 6rem 0;
     position: relative;
 }
 
@@ -1030,7 +1030,7 @@ body:not(.mode-off) .switch-label.on {
 
 /* SECTION 3: TRILHA CINEMÁTICA DE CONTEÚDO COMPLETE */
 .trilha-showcase {
-    padding: 0rem 0;
+    padding: 6rem 0;
     position: relative;
 }
 
@@ -1371,7 +1371,7 @@ body:not(.mode-off) .switch-label.on {
 .seal-floating-clean {
     position: absolute;
     top: -15px;
-    left: 0;
+    right: 0;
     z-index: 3;
 }
 
@@ -1382,12 +1382,16 @@ body:not(.mode-off) .switch-label.on {
 }
 
 /* Coluna de Informações */
+/* Remove o empurrão automático e mantém o conteúdo agrupado */
 .patz-info-col {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.2rem;
-}
+    gap: 1rem;            /* Espaçamento curto e proporcional entre logo, dosagem, claims e botões */
+    height: auto !important; /* Deixa o card na altura natural do conteúdo */
+  }
+  
+  /* Remove o margin-top: auto que jogava o botão para o chão */
 
 .brand-logo-clean img {
     height: 36px;
@@ -1442,7 +1446,7 @@ body:not(.mode-off) .switch-label.on {
     display: flex;
     align-items: center;
     gap: 0.8rem;
-    font-size: 0.92rem;
+    font-size: 0.82rem;
     color: #e2e8f0;
     font-weight: 500;
     line-height: 1.4;
@@ -1554,8 +1558,115 @@ body:not(.mode-off) .switch-label.on {
   /* Grid com os 3 Cards de Suporte */
   .science-cards-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr); /* 2x2 para melhor encaixe */
+    gap: 1.2rem;
+  }
+
+  .brand-logo-card .patz-brand-logo {
+    max-height: 38px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  .science-card.highlight-discount {
+    border-color: rgba(251, 225, 34, 0.3);
+    background: rgba(251, 225, 34, 0.04);
+  }
+
+  .science-card.highlight-discount .science-card-icon {
+    background: rgba(251, 225, 34, 0.15);
+    border-color: rgba(251, 225, 34, 0.4);
+    color: #fbe122;
+  }
+  
+  .science-card.highlight-discount:hover {
+    border-color: #fbe122;
+    box-shadow: 0 12px 25px rgba(251, 225, 34, 0.15);
+  }
+
+  /* ==========================================================================
+   ALINHAMENTO EM ALTURA E MOLDURA DE DESTAQUE PARA LOGOS ESCUROS
+   ========================================================================== */
+
+/* Alinha os dois blocos principais para terem a mesma altura total */
+.patz-editorial-grid {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    gap: 3.5rem;
+    align-items: stretch; /* Garante que os dois lados tenham exatamente a mesma altura */
+  }
+  
+  .patz-editorial-item {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 2rem;
+    align-items: start; /* Fixa o topo na mesma linha exata */
+    height: 100%;
+  }
+  
+  /* Coluna de informações e distribuição do conteúdo */
+  .patz-info-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+    height: 100%;
+  }
+  
+  /* Moldura Iluminada de Fundo Claro para Destacar o Logo Escuro */
+  .brand-logo-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px; /* Altura cravada igual para ambos os lados */
+    width: 100%;
+    padding: 0.6rem 1.4rem;
+    background: rgba(255, 255, 255, 0.88); /* Fundo claro para estourar o contraste do logo escuro */
+    border: 1px solid rgba(255, 255, 255, 0.95);
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25), 0 0 20px rgba(255, 255, 255, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .patz-editorial-item:hover .brand-logo-card {
+    transform: translateY(-2px);
+    background: #ffffff;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35), 0 0 25px rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Ajuste e Dimensionamento dos Logos */
+  .brand-logo-card .patz-brand-logo {
+    max-height: 40px;
+    max-width: 100%;
+    width: auto;
+    object-fit: contain;
+  }
+  
+  /* Empurra os botões de bula para a base, mantendo o alinhamento perfeito */
+  .bula-actions-group {
+    margin-top: 0.5rem !important;
+    padding-top: 0 !important;
+    width: 100%;
+  }
+  
+  @media (max-width: 900px) {
+    .science-cards-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .brand-logo-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 58px; /* Altura fixa garantida para ambos os lados */
+    width: 100%;
+    padding: 0.5rem 1.2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
   }
   
   .science-card {
@@ -1681,8 +1792,6 @@ body:not(.mode-off) .switch-label.on {
 /* ==========================================================================
 			CSS CLONADO DA SEÇÃO DE ENCERRAMENTO (DESLIGUE-SE)
 			========================================================================== */
-
-/* Variáveis de cores e fontes necessárias para o bloco */
 :root {
     --colors-bg0: #050A12;
     --colors-bg1: #07162A;
@@ -1959,4 +2068,54 @@ body:not(.mode-off) .switch-label.on {
     height: 100% !important;
     fill: currentColor !important;
     display: block !important;
+  }
+
+
+/* ==========================================================================
+   ETIQUETA CLEAN / MOLDURA BRANCA DELICADA PARA LOGOS PATZ
+   ========================================================================== */
+
+   .brand-logo-floating-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 18px;                 /* Respiro interno justo e delicado */
+    background: #ffffff;              /* Fundo branco limpo para contraste total */
+    border-radius: 8px;                /* Cantos suavemente arredondados (sem parecer cápsula gigante) */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra leve de destaque */
+    animation: floatLogoDelicate 4s infinite ease-in-out;
+  }
+  
+  .brand-logo-floating-wrapper .patz-brand-logo {
+    height: 28px;                      /* Tamanho controlado do logo */
+    width: auto;
+    object-fit: contain;
+    display: block;
+  }
+  
+  /* Animação suave de flutuação */
+  @keyframes floatLogoDelicate {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  /* Interatividade Sutil ao passar o mouse */
+ 
+  /* Ajustes nos botões de bula para ficarem em linha no SL */
+  .bula-actions-group {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: auto;
+  }
+  
+  .bula-actions-group .btn-bula-clean {
+    flex: 1;
+    min-width: 130px;
+    text-align: center;
+    justify-content: center;
   }
